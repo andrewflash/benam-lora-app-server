@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
+	"github.com/andrewflash/benam-lora-api/go/v3/as/integration"
+	"github.com/andrewflash/benam-lora-app-server/internal/integration/models"
 	"github.com/pkg/errors"
 )
 

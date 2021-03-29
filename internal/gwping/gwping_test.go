@@ -8,14 +8,14 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/brocaar/chirpstack-api/go/v3/as"
-	"github.com/brocaar/chirpstack-api/go/v3/common"
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
-	"github.com/brocaar/lorawan"
+	"github.com/andrewflash/benam-lora-api/go/v3/as"
+	"github.com/andrewflash/benam-lora-api/go/v3/common"
+	"github.com/andrewflash/benam-lora-api/go/v3/gw"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver/mock"
+	"github.com/andrewflash/benam-lora-app-server/internal/storage"
+	"github.com/andrewflash/benam-lora-app-server/internal/test"
+	"github.com/andrewflash/lorawan"
 )
 
 func TestGatewayPing(t *testing.T) {

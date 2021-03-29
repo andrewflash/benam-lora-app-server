@@ -12,16 +12,16 @@ import (
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc/resolver"
 
-	"github.com/brocaar/chirpstack-application-server/internal/api"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	jscodec "github.com/brocaar/chirpstack-application-server/internal/codec/js"
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	"github.com/brocaar/chirpstack-application-server/internal/downlink"
-	"github.com/brocaar/chirpstack-application-server/internal/gwping"
-	"github.com/brocaar/chirpstack-application-server/internal/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/migrations/code"
-	"github.com/brocaar/chirpstack-application-server/internal/monitoring"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/andrewflash/benam-lora-app-server/internal/api"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver"
+	jscodec "github.com/andrewflash/benam-lora-app-server/internal/codec/js"
+	"github.com/andrewflash/benam-lora-app-server/internal/config"
+	"github.com/andrewflash/benam-lora-app-server/internal/downlink"
+	"github.com/andrewflash/benam-lora-app-server/internal/gwping"
+	"github.com/andrewflash/benam-lora-app-server/internal/integration"
+	"github.com/andrewflash/benam-lora-app-server/internal/migrations/code"
+	"github.com/andrewflash/benam-lora-app-server/internal/monitoring"
+	"github.com/andrewflash/benam-lora-app-server/internal/storage"
 )
 
 func run(cmd *cobra.Command, args []string) error {

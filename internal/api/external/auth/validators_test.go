@@ -8,11 +8,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	"golang.org/x/net/context"
 
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
-	"github.com/brocaar/lorawan"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver/mock"
+	"github.com/andrewflash/benam-lora-app-server/internal/storage"
+	"github.com/andrewflash/benam-lora-app-server/internal/test"
+	"github.com/andrewflash/lorawan"
 )
 
 type validatorTest struct {

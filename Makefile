@@ -1,7 +1,7 @@
 .PHONY: build clean test ui-requirements serve internal/statics internal/migrations 
 PKGS := $(shell go list ./cmd/... ./internal/... | grep -v /vendor |grep -v /internal/static |grep -v /internal/migrations)
 VERSION := $(shell git describe --always |sed -e "s/^v//")
-API_VERSION := $(shell go list -m -f '{{ .Version }}' github.com/brocaar/chirpstack-api/go/v3 | awk '{n=split($$0, a, "-"); print a[n]}')
+API_VERSION := $(shell go list -m -f '{{ .Version }}' github.com/andrewflash/benam-lora-api/go/v3 | awk '{n=split($$0, a, "-"); print a[n]}')
 
 build: ui/build internal/statics internal/migrations
 	mkdir -p build
@@ -56,7 +56,7 @@ internal/statics internal/migrations: static/swagger/api.swagger.json
 static/swagger/api.swagger.json:
 	@echo "Fetching Swagger definitions and generate combined Swagger JSON"
 	@rm -rf /tmp/chirpstack-api
-	@git clone https://github.com/brocaar/chirpstack-api.git /tmp/chirpstack-api
+	@git clone https://github.com/andrewflash/benam-lora-api.git /tmp/chirpstack-api
 	@git --git-dir=/tmp/chirpstack-api/.git --work-tree=/tmp/chirpstack-api checkout $(API_VERSION)
 	@mkdir -p static/swagger
 	@cp /tmp/chirpstack-api/swagger/as/external/api/*.json static/swagger
@@ -82,3 +82,6 @@ ui-requirements:
 serve: build
 	@echo "Starting ChirpStack Application Server"
 	./build/chirpstack-application-server
+
+run-compose-test:
+	docker-compose run --rm chirpstack-application-server make test

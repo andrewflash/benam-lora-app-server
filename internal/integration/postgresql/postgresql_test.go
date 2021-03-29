@@ -17,15 +17,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-api/go/v3/common"
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
-	"github.com/brocaar/lorawan"
+	pb "github.com/andrewflash/benam-lora-api/go/v3/as/integration"
+	"github.com/andrewflash/benam-lora-api/go/v3/common"
+	"github.com/andrewflash/benam-lora-api/go/v3/gw"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver/mock"
+	"github.com/andrewflash/benam-lora-app-server/internal/config"
+	"github.com/andrewflash/benam-lora-app-server/internal/storage"
+	"github.com/andrewflash/benam-lora-app-server/internal/test"
+	"github.com/andrewflash/lorawan"
 )
 
 type deviceUp struct {

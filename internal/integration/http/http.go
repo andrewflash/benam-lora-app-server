@@ -14,11 +14,11 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com/brocaar/chirpstack-application-server/internal/logging"
-	"github.com/brocaar/lorawan"
+	pb "github.com/andrewflash/benam-lora-api/go/v3/as/integration"
+	"github.com/andrewflash/benam-lora-app-server/internal/integration/marshaler"
+	"github.com/andrewflash/benam-lora-app-server/internal/integration/models"
+	"github.com/andrewflash/benam-lora-app-server/internal/logging"
+	"github.com/andrewflash/lorawan"
 )
 
 var headerNameValidator = regexp.MustCompile(`^[A-Za-z0-9-]+$`)

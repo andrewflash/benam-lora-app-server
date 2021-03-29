@@ -12,14 +12,14 @@ import (
 	. "github.com/smartystreets/goconvey/convey"
 	"golang.org/x/net/context"
 
-	"github.com/brocaar/chirpstack-api/go/v3/ns"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/codec"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
-	"github.com/brocaar/lorawan"
+	"github.com/andrewflash/benam-lora-api/go/v3/ns"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver/mock"
+	"github.com/andrewflash/benam-lora-app-server/internal/codec"
+	"github.com/andrewflash/benam-lora-app-server/internal/integration/models"
+	"github.com/andrewflash/benam-lora-app-server/internal/storage"
+	"github.com/andrewflash/benam-lora-app-server/internal/test"
+	"github.com/andrewflash/lorawan"
 )
 
 func TestHandleDownlinkQueueItem(t *testing.T) {

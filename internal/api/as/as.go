@@ -16,15 +16,15 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	"github.com/brocaar/chirpstack-api/go/v3/as"
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/api/helpers"
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	"github.com/brocaar/chirpstack-application-server/internal/events/uplink"
-	"github.com/brocaar/chirpstack-application-server/internal/gwping"
-	"github.com/brocaar/chirpstack-application-server/internal/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/lorawan"
+	"github.com/andrewflash/benam-lora-api/go/v3/as"
+	pb "github.com/andrewflash/benam-lora-api/go/v3/as/integration"
+	"github.com/andrewflash/benam-lora-app-server/internal/api/helpers"
+	"github.com/andrewflash/benam-lora-app-server/internal/config"
+	"github.com/andrewflash/benam-lora-app-server/internal/events/uplink"
+	"github.com/andrewflash/benam-lora-app-server/internal/gwping"
+	"github.com/andrewflash/benam-lora-app-server/internal/integration"
+	"github.com/andrewflash/benam-lora-app-server/internal/storage"
+	"github.com/andrewflash/lorawan"
 )
 
 var (

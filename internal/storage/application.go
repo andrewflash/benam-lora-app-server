@@ -11,8 +11,8 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/chirpstack-application-server/internal/codec"
-	"github.com/brocaar/chirpstack-application-server/internal/logging"
+	"github.com/andrewflash/benam-lora-app-server/internal/codec"
+	"github.com/andrewflash/benam-lora-app-server/internal/logging"
 )
 
 var applicationNameRegexp = regexp.MustCompile(`^[\w-]+$`)

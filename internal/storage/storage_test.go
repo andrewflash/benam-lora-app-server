@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/brocaar/chirpstack-application-server/internal/test"
+	"github.com/andrewflash/benam-lora-app-server/internal/test"
 )
 
 // DatabaseTestSuiteBase provides the setup and teardown of the database

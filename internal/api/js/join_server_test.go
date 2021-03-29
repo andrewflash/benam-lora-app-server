@@ -15,15 +15,15 @@ import (
 	"github.com/lib/pq/hstore"
 	"github.com/stretchr/testify/require"
 
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	nsmock "github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	"github.com/brocaar/chirpstack-application-server/internal/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/backend"
+	"github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver"
+	nsmock "github.com/andrewflash/benam-lora-app-server/internal/backend/networkserver/mock"
+	"github.com/andrewflash/benam-lora-app-server/internal/config"
+	"github.com/andrewflash/benam-lora-app-server/internal/integration"
+	"github.com/andrewflash/benam-lora-app-server/internal/integration/mock"
+	"github.com/andrewflash/benam-lora-app-server/internal/storage"
+	"github.com/andrewflash/benam-lora-app-server/internal/test"
+	"github.com/andrewflash/lorawan"
+	"github.com/andrewflash/lorawan/backend"
 )
 
 func TestJoinServerAPI(t *testing.T) {
